@@ -32,7 +32,6 @@ public class BaseScreen {
         capabilities.setCapability("appActivity", "com.wdiodemoapp.MainActivity");
         capabilities.setCapability(MobileCapabilityType.APP, "C:\\Users\\juandiego.sierra\\Downloads\\Android-NativeDemoApp-0.4.0.apk");
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        //driver = new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723"), capabilities);
         URL appiumServer = new URL("http://127.0.0.1:4723");
         appiumDriver = new AppiumDriver<>(appiumServer,capabilities);
         } catch (Exception e) {
